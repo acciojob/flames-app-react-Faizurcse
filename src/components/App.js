@@ -44,11 +44,11 @@ function App(){
 
   return(
     <div>
-      <input data-testid="input1"  onChange={myfun1} value={inp1}  type="text" placeholder='Enter first name'/>
-      <input data-testid="input2" onChange={myfun2} value={inp2} type="text" placeholder='Enter second name'/>
+      <input data-testid="input1" name="name1"  onChange={myfun1} value={inp1}  type="text" placeholder='Enter first name'/>
+      <input data-testid="input2" name="name2" onChange={myfun2} value={inp2} type="text" placeholder='Enter second name'/>
       <button data-testid="calculate_relationship" onClick={myfunction}>Calculate Realationship Future</button>
       <button data-testid="clear" onClick={Clear}>Clear</button>
-      <h3 data-testid="answer">{result}</h3>
+      <h3 data-testid="answer">Marriage : {result}</h3>
     </div>
   )
 }
